@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs'
 import { fontSans } from '@pills-tracker/pills-tracker-web-ui'
 import './global.css'
 
@@ -7,8 +8,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={fontSans.className}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={fontSans.className + ' h-screen'}>{children}</body>
+      </html>
+    </ClerkProvider>
   )
 }

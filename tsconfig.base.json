@@ -21,8 +21,17 @@
       "@pills-tracker/pills-tracker-server-utils-env": [
         "libs/pills-tracker-server/utils-env/src/index.ts"
       ],
+      "@pills-tracker/pills-tracker-web-feature-auth": [
+        "libs/pills-tracker-web/feature-auth/src/index.ts"
+      ],
+      "@pills-tracker/pills-tracker-web-feature-auth/server": [
+        "libs/pills-tracker-web/feature-auth/src/server.ts"
+      ],
       "@pills-tracker/pills-tracker-web-ui": ["libs/pills-tracker-web/ui/src/index.ts"],
-      "@pills-tracker/pills-tracker-web-ui/server": ["libs/pills-tracker-web/ui/src/server.ts"]
+      "@pills-tracker/pills-tracker-web-ui/server": ["libs/pills-tracker-web/ui/src/server.ts"],
+      "@pills-tracker/pills-tracker-web-utils-env": [
+        "libs/pills-tracker-web/utils-env/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
