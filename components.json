@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "apps/pills-tracker-web",
+    "css": "apps/pills-tracker-web/app/global.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "libs/pills-tracker-web/ui/src/lib",
+    "utils": "libs/pills-tracker-web/ui/src/lib"
+  }
+}

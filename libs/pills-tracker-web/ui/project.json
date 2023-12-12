@@ -1,0 +1,16 @@
+{
+  "name": "pills-tracker-web-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/pills-tracker-web/ui/src",
+  "projectType": "library",
+  "tags": ["scope:web"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/pills-tracker-web/ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
