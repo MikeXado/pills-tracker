@@ -1,3 +1,4 @@
+import { fontSans } from '@pills-tracker/pills-tracker-web-ui'
 import './global.css'
 
 export const metadata = {
@@ -7,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={fontSans.className}>{children}</body>
     </html>
   )
 }

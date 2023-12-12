@@ -4,17 +4,20 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm run db:up && pnpm run db:migrate:dev && pnpm dlx concurrently --kill-others \"npm:dev:web\" \"npm:dev:server\"",
-    "dev:web": "pnpm nx run ulim-web:serve",
-    "dev:server": "pnpm nx run ulim-server:serve",
+    "dev:web": "pnpm nx run pills-tracker-web:serve",
+    "dev:server": "pnpm nx run pills-tracker-server:serve",
     "------SHADCN------": "------SHADCN------",
     "add-component": "pnpm dlx shadcn-ui@latest add",
     "------DATABASE----": "-----DATABASE-----",
-    "db:up": "docker compose -f tools/student-ulim-env/dev.docker-compose.yml up -d --no-recreate --remove-orphans",
-    "db:studio": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env prisma studio",
-    "db:push": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env prisma db push --accept-data-loss",
-    "db:prisma-gen": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env prisma generate",
-    "db:migrate:dev": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env prisma migrate dev",
+    "db:up": "docker compose -f tools/pills-tracker-env/dev.docker-compose.yml up -d --no-recreate --remove-orphans",
+    "db:studio": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env.local prisma studio",
+    "db:push": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env.local prisma db push --accept-data-loss",
+    "db:prisma-gen": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env.local prisma generate",
+    "db:migrate:dev": "pnpm dlx env-cmd -f apps/pills-tracker-server/.env.local prisma migrate dev",
     "db:migrate:prod": "pnpm dlx prisma migrate deploy"
+  },
+  "prisma": {
+    "schema": "libs/pills-tracker-server/data-access-db/src/lib/schema.prisma"
   },
   "private": true,
   "dependencies": {
@@ -76,7 +79,7 @@
     "@nx/jest": "17.0.1",
     "@nx/js": "17.2.1",
     "@nx/linter": "^17.0.1",
-    "@nx/nest": "^17.0.1",
+    "@nx/nest": "17.2.1",
     "@nx/next": "17.2.1",
     "@nx/node": "17.0.1",
     "@nx/react": "17.2.1",

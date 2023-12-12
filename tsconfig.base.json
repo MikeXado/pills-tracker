@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@pills-tracker/pills-tracker-server-data-access-db": [
+        "libs/pills-tracker-server/data-access-db/src/index.ts"
+      ],
+      "@pills-tracker/pills-tracker-server-utils-env": [
+        "libs/pills-tracker-server/utils-env/src/index.ts"
+      ],
       "@pills-tracker/pills-tracker-web-ui": ["libs/pills-tracker-web/ui/src/index.ts"],
       "@pills-tracker/pills-tracker-web-ui/server": ["libs/pills-tracker-web/ui/src/server.ts"]
     }
