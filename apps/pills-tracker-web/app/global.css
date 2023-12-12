@@ -80,4 +80,13 @@
       'rlig' 1,
       'calt' 1;
   }
+
+  .authentication-wrapper {
+    background: url('../public/assets/pills.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
