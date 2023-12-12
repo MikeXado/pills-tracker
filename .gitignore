@@ -39,3 +39,8 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+# Next.js
+.next
+apps/ulim-web/.env.local
+apps/ulim-server/.env

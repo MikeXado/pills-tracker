@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  pills-tracker:
+    image: mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - pills-tracker-db-data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: 'pills-tracker'
+      MYSQL_ROOT_PASSWORD: pass
+
+volumes:
+  pills-tracker-db-data:

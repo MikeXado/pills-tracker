@@ -2,3 +2,5 @@
 /dist
 /coverage
 /.nx/cache
+*.config.js
+*.config.ts
