@@ -39,7 +39,10 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/pills-tracker-server/**/*.{ts,tsx,js,jsx}"]
+      }
     },
     "test": {
       "executor": "@nx/jest:jest",
