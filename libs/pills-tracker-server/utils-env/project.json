@@ -1,0 +1,16 @@
+{
+  "name": "pills-tracker-server-utils-env",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/pills-tracker-server/utils-env/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/pills-tracker-server/utils-env/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["scope:server"]
+}

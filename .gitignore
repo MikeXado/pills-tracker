@@ -44,3 +44,7 @@ Thumbs.db
 .next
 apps/ulim-web/.env.local
 apps/ulim-server/.env
+
+#env
+.env.local
+.env

@@ -2,3 +2,6 @@
 
 export * from './lib/fonts'
 export * from './lib/utils'
+export * from './lib/ui/button'
+export * from './lib/ui/badge'
+export * from './lib/ui/dialog'
